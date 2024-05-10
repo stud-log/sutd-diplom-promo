@@ -1,0 +1,27 @@
+:root {
+
+    /* fonts */
+    --ff: 'Inter';
+    --fz: 14px;
+    --fw: 500;
+    --fz-l: 1.571rem;
+    --fz-m: 1.285rem;
+    --fz-s: 0.857rem;
+
+    /* colors */
+    --bg-main: #F3F5FB;
+    --accent: #2962FF;
+    --attention: #FFA000;
+    --white: #FFF;
+    --red: #EF2B2B;
+    --green: #319E4A;
+    --red-input-back:rgb(239 43 43 / 2%);
+    --black-blue: #214ECC;
+    --black-main: #1E1E1E;
+    --black-buttons-back: rgb(30 30 30 / 7%);
+    --black-input-back: rgb(30 30 30 / 2%);
+    --background-color-schedule: #EEF3FF;
+    --black-translucent-subtitle: rgb(30 30 30 / 60%);
+    --black-translucent-subtitle2: #787878;
+    --black-stroke-translucent: #E4E4E4;
+}
