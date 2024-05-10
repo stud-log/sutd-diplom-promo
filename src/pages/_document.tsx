@@ -4,6 +4,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
+        
         <meta property="og:url" content="https://promo.studlog.ru" />
         <meta property="og:title" content="Promo Stud.log" />
         <meta property="og:description" content="Студенческий портал" />
