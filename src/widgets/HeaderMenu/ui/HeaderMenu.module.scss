@@ -1,3 +1,40 @@
+@import '../../../app/styles/mixins';
+
 .HeaderMenu{
-    
+    padding: 35px 51px;
+    padding-bottom: 0;
+    background: var(--accent);
+
+    &::after {
+        content: "";
+        display: block;
+        margin-top: 35px;
+        border-bottom: 1px solid var(--white);
+    }
+}
+
+.desktopMenu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+
+    .linkItem{
+        color: var(--white);
+
+    }
+
+    @include lessThan(lg) {
+        display: none;
+    }
+}
+
+.mobileMenu{
+    .linkItem{
+
+    }
+
+    @include moreThan(lg) {
+        display: none;
+    }
 }

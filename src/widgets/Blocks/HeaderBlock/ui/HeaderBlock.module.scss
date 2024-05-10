@@ -1,0 +1,89 @@
+.HeaderBlock{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-bottom-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+    padding: 50px 150px;
+    padding-bottom: 100px;
+    background: var(--accent);
+    gap: 30px;
+}
+
+
+.block{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1140px;
+    font-family: sans-serif, Ermilov;
+    font-weight: 600;
+    font-size: clamp(1rem, -3.486rem + 11.962vw, 7.28rem);
+    color: var(--white);
+    gap: 20px;
+}
+
+.text{
+    line-height: 0.7;
+}
+
+.image {
+    position: relative;
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 0;
+    align-items: flex-end;
+    height: 1.4em;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+
+.firstBlock{
+    .text{
+
+    }
+
+    .image{
+        justify-content: flex-end;
+    }
+}
+
+.thirdBlock{
+    .image {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+
+// elements
+
+.oct1{
+    position: absolute;
+    left: 90px;
+    top: 26px;
+}
+
+.oct2{
+    position: absolute;
+    right: 58px;
+    top: 38px;
+}
+
+.oct3{
+    position: absolute;
+    right: 41px;
+    bottom: 20px;
+}
+
+.oct4{
+    position: absolute;
+    left: 58px;
+    bottom: 73px;
+}
