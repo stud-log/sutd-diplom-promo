@@ -30,6 +30,12 @@
     }
 }
 
+.mobileBtn {
+    @include moreThan(md) {
+        display: none;
+    }
+}
+
 .btn {
     a {
         display: flex;
