@@ -14,7 +14,7 @@ interface RoadMapProps {
 export const RoadMap: FC<RoadMapProps> = ({ className }) => {
 
   return (
-    <div className={classNames(cls.RoadMap, {}, [ className ])}>
+    <div className={classNames(cls.RoadMap, {}, [ className ])} id='purposes'>
       <LineIcon className={cls.line} />
       <div className={cls.header}>НАШИ ЦЕЛИ</div>
       <div className={cls.cardsWrapper}>

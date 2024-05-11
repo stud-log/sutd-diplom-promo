@@ -11,7 +11,7 @@ interface VideoPlayerProps {
 export const VideoPlayer: FC<VideoPlayerProps> = ({ className }) => {
 
   return (
-    <div className={classNames(cls.VideoPlayer, {}, [ className ])}>
+    <div className={classNames(cls.VideoPlayer, {}, [ className ])} id='presentation'>
       <Video src={promo} className={cls.player} loop>
         <div slot='poster' className={cls.placeholder}>Презентация Studlog</div>
       </Video>

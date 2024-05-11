@@ -21,7 +21,7 @@
 
     .linkItem{
         color: var(--white);
-
+        cursor: pointer;
     }
 
     @include lessThan(lg) {
@@ -31,7 +31,7 @@
 
 .mobileMenu{
     .linkItem{
-
+        cursor: pointer;
     }
 
     @include moreThan(lg) {

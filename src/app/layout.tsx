@@ -1,5 +1,6 @@
 import '@/app/styles/index.scss';
 
+import { Footer } from '@/widgets/Blocks';
 import { HeaderMenu } from "@/widgets/HeaderMenu";
 import { ReactNode } from "react";
 import { ReduxProvider } from "./providers/ReduxProvider";
@@ -21,7 +22,7 @@ export default function RootLayout({ children }: Props) {
               {children}
             </main>
             <footer>
-
+              <Footer />
             </footer>
           </div>
         </body>

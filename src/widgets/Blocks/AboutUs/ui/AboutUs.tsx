@@ -19,7 +19,7 @@ const advs = [
 export const AboutUs: FC<AboutUsProps> = ({ className }) => {
 
   return (
-    <div className={classNames(cls.AboutUs, {}, [ className ])}>
+    <div className={classNames(cls.AboutUs, {}, [ className ])} id='about'>
       <div className={cls.about}>
         <div className={cls.leftCol}>
           <div className={cls.header}>О STUDLOG</div>
