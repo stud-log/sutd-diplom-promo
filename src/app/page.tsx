@@ -1,4 +1,5 @@
-import { HeaderBlock } from "@/widgets/Blocks";
+import { AboutUs, HeaderBlock } from "@/widgets/Blocks";
+
 import { VideoPlayer } from "@/widgets/VideoPlayer";
 
 export default function Home() {
@@ -6,6 +7,7 @@ export default function Home() {
     <>
       <HeaderBlock />
       <VideoPlayer />
+      <AboutUs />
     </>
   );
 }

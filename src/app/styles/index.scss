@@ -9,6 +9,10 @@
     max-width: 1440px;
 }
 
+.accent{
+    color: var(--accent);
+}
+
 .next-video-alert-sourced{
     display: none;
 }
@@ -30,6 +34,7 @@ html {
     font-family: var(--ff) !important;
     font-weight: var(--fw);
     font-size: var(--fz);
+    line-height: 1.6;
 }
 
 body {
