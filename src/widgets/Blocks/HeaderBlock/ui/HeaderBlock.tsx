@@ -1,3 +1,4 @@
+import ArrowIcon from '@/shared/assets/img/arrow-r.svg';
 import BtnRowIcon from '@/shared/assets/img/button.svg';
 import { FC } from 'react';
 import FirstRowIcon from '@/shared/assets/img/new.svg';
@@ -32,7 +33,11 @@ export const HeaderBlock: FC<HeaderBlockProps> = ({ className }) => {
       </div>
       <div className={classNames(cls.thirdBlock, {}, [ cls.block ])}>
         <div className={cls.text}>СООБЩЕСТВО</div>
-        <div className={cls.image}><BtnRowIcon style={{ cursor: 'pointer' }} /></div>
+        <div className={cls.image}>
+          <div className={cls.btn}>
+            <a href="https://studlog.ru/reg" target='_blank'>Вступить <ArrowIcon /></a>
+          </div>
+        </div>
       </div>
     </div>
   );

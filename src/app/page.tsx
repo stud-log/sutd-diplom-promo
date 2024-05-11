@@ -1,4 +1,4 @@
-import { AboutUs, HeaderBlock, RoadMap } from "@/widgets/Blocks";
+import { AboutUs, Footer, HeaderBlock, RoadMap } from "@/widgets/Blocks";
 
 import { VideoPlayer } from "@/widgets/VideoPlayer";
 
@@ -9,6 +9,7 @@ export default function Home() {
       <VideoPlayer />
       <AboutUs />
       <RoadMap />
+      <Footer />
     </>
   );
 }

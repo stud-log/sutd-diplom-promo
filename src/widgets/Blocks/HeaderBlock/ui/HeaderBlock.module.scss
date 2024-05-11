@@ -10,6 +10,23 @@
     gap: 30px;
 }
 
+.btn {
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 3px solid var(--white);
+        border-radius: 20px;
+        padding: 20px;
+        width: 310px;
+        box-shadow: 0 4px var(--white);
+        font-family: var(--ff);
+        font-size: var(--fz-m);
+        color: var(--white);
+        background: var(--black-main);
+        gap: 8px;
+    }
+}
 
 .block{
     display: flex;
