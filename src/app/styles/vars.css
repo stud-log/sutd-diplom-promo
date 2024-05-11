@@ -8,7 +8,9 @@
     --fz-s: 0.857rem;
 
     /* colors */
-    --bg-main: #F3F5FB;
+
+    /* --bg-main: #F3F5FB; */
+    --bg-main: #FFF;
     --accent: #2962FF;
     --attention: #FFA000;
     --white: #FFF;

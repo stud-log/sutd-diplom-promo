@@ -1,0 +1,85 @@
+.RoadMap{
+    position: relative;
+    margin-top: 20px;
+    border-radius: 60px;
+    padding: 70px 58px;
+    background: var(--accent);
+    
+}
+
+.header {
+    font-family: Ermilov, sans-serif;
+    font-weight: 600;
+    font-size: clamp(1.5rem, 0.875rem + 2.5vw, 3.125rem);
+    color: var(--white);
+}
+
+.row {
+    position: relative;
+    display: flex;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+.justifyEnd{
+    justify-content: flex-end;
+}
+
+.justifyStart{
+    justify-content: flex-start;
+}
+
+.cardsWrapper {
+
+}
+
+.star{
+    position: absolute;
+    left: 40%;
+    top: 66px;
+}
+
+.star2{
+    position: absolute;
+    right: 20%;
+    bottom: -31px;
+}
+
+.poly{
+    position: absolute;
+    right: 10%;
+    top: 31px;
+}
+
+.poly2{
+    position: absolute;
+    left: 20%;
+    top: 48px;
+}
+
+.card {
+    position: relative;
+    border: 1px solid var(--white);
+    border-radius: 30px;
+    padding: 25px 20px;
+    width: 428px;
+    height: 207px;
+    color: var(--white);
+    background: var(--black-main);
+
+    .year {
+        position: absolute;
+        right: 20px;
+        bottom: 15px;
+        font-family: Ermilov, sans-serif;
+        font-weight: 600;
+        font-size: clamp(1.5rem, 0.875rem + 2.5vw, 3.125rem);
+    }
+}
+
+.line{
+    position: absolute;
+    left: 50%;
+    top: 0;
+    translate: -52% 0;
+}
