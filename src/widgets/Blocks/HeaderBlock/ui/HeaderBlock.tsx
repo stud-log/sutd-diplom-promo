@@ -32,7 +32,7 @@ export const HeaderBlock: FC<HeaderBlockProps> = ({ className }) => {
       </div>
       <div className={classNames(cls.thirdBlock, {}, [ cls.block ])}>
         <div className={cls.text}>СООБЩЕСТВО</div>
-        <div className={cls.image}><BtnRowIcon/></div>
+        <div className={cls.image}><BtnRowIcon style={{ cursor: 'pointer' }} /></div>
       </div>
     </div>
   );

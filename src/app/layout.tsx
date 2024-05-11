@@ -13,15 +13,17 @@ export default function RootLayout({ children }: Props) {
     <ReduxProvider>
       <html lang="en">
         <body>
-          <header>
-            <HeaderMenu />
-          </header>
-          <main>
-            {children}
-          </main>
-          <footer>
+          <div className="wrapper">
+            <header>
+              <HeaderMenu />
+            </header>
+            <main>
+              {children}
+            </main>
+            <footer>
 
-          </footer>
+            </footer>
+          </div>
         </body>
       </html>
     </ReduxProvider>

@@ -1,0 +1,27 @@
+.VideoPlayer{
+    margin: 20px 0;
+
+}
+
+.player{
+    position: relative;
+    overflow: hidden;
+    border-radius: 60px;
+}
+
+.placeholder{
+    position: absolute;
+    left: 50%;
+    top: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    border-radius: 18px;
+    padding: 17px 24px;
+    width: max-content;
+    height: max-content;
+    font-weight: 600;
+    color: var(--black-main);
+    background: var(--white);
+    translate: -50% 0;
+}

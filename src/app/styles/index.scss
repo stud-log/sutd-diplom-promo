@@ -3,6 +3,16 @@
 @import '../../shared/assets/fonts/fonts.css';
 @import './mixins';
 
+
+.wrapper{
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+.next-video-alert-sourced{
+    display: none;
+}
+
 * {
     &::-webkit-scrollbar {
         width: 5px;
