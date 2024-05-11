@@ -1,3 +1,5 @@
+@import '../../../app/styles/mixins';
+
 .Footer{
     position: relative;
     overflow: hidden;
@@ -6,6 +8,12 @@
     border-top-right-radius: 60px;
     padding: 70px 58px;
     background: var(--black-main);
+
+    @include lessThan(md) {
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        padding: 30px 20px;
+    }
 }
 
 
@@ -32,7 +40,21 @@
         font-size: var(--fz-m);
         color: var(--white);
         background: var(--accent);
+        transition: .2s ease-in-out;
         gap: 8px;
+
+        &:hover {
+            background: var(--black-main);
+        }
+
+        @include lessThan(xl){
+            padding: 10px;
+            width: 250px;
+        }
+    }
+
+    @include lessThan(sm) {
+        margin-bottom: 30px;
     }
 }
 
@@ -41,6 +63,10 @@
         margin-bottom: 25px;
         font-size: var(--fz-s);
         color: var(--black-translucent-subtitle2);
+
+        @include lessThan(sm) {
+            margin-bottom: 30px;
+        }
     }
 
     .links {
@@ -48,10 +74,33 @@
         gap: 20px;
 
     }
+
+    @include lessThan(sm) {
+        margin-bottom: 150px;
+    }
 }
 
 .image {
     position: absolute;
     right: 58px;
     bottom: -10px;
+
+    @include lessThan(xl){
+        width: 100%;
+        text-align: right;
+
+        img {
+            width: 60%;
+            height: auto;
+        }
+    }
+
+    @include lessThan(sm) {
+        right: 20px;
+
+        img {
+            width: calc(100% - 40px);
+        }
+    }
+
 }

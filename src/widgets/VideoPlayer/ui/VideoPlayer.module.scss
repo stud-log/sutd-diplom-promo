@@ -1,13 +1,25 @@
+@import '../../../app/styles/mixins';
+
 .VideoPlayer{
     margin: 20px 0;
     border-radius: 60px;
     background: var(--black-main);
+
+    @include lessThan(md) {
+        border-radius: 30px;
+
+    }
 }
 
 .player{
     position: relative;
     overflow: hidden;
     border-radius: 60px;
+
+    @include lessThan(md) {
+        border-radius: 30px;
+
+    }
 }
 
 .placeholder{

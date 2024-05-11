@@ -2,6 +2,7 @@ import '@/app/styles/index.scss';
 
 import { Footer } from '@/widgets/Blocks';
 import { HeaderMenu } from "@/widgets/HeaderMenu";
+import { MobileMenu } from '@/widgets/MobileMenu';
 import { ReactNode } from "react";
 import { ReduxProvider } from "./providers/ReduxProvider";
 
@@ -14,6 +15,7 @@ export default function RootLayout({ children }: Props) {
     <ReduxProvider>
       <html lang="en">
         <body>
+          <MobileMenu />
           <div className="wrapper">
             <header>
               <HeaderMenu />

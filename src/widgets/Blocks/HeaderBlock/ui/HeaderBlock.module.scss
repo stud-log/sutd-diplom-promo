@@ -1,3 +1,5 @@
+@import '../../../../app/styles/mixins';
+
 .HeaderBlock{
     position: relative;
     display: flex;
@@ -8,6 +10,24 @@
     padding-bottom: 100px;
     background: var(--accent);
     gap: 30px;
+
+    @include lessThan(xl){
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+
+    @include lessThan(md) {
+        margin-top: -1px;
+        border-bottom-right-radius: 30px;
+        border-bottom-left-radius: 30px;
+        padding-top: 40px;
+        padding-bottom: 50px;
+    }
+
+    @include lessThan(sm) {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
 }
 
 .btn {
@@ -24,7 +44,21 @@
         font-size: var(--fz-m);
         color: var(--white);
         background: var(--black-main);
+        transition: .2s ease-in-out;
         gap: 8px;
+
+        &:hover {
+            background: var(--accent);
+        }
+
+        @include lessThan(xl){
+            padding: 10px;
+            width: 250px;
+        }
+
+        @include lessThan(md) {
+            width: 100%;
+        }
     }
 }
 
@@ -37,9 +71,6 @@
     max-width: 1140px;
     font-family:  Ermilov, sans-serif;
     font-weight: 600;
-
-    // font-size: clamp(1rem, -3.486rem + 11.962vw, 7.28rem);
-
     font-size: clamp(2.125rem, 0.4904rem + 6.5385vw, 6.375rem);
     color: var(--white);
     gap: 20px;
@@ -49,18 +80,43 @@
     line-height: 0.7;
 }
 
+.imageMobile {
+    position: relative;
+    display: flex;
+    flex-grow: 0.7;
+    align-items: flex-end;
+    height: 1.4em;
+
+    & > svg {
+        width: 100%;
+        height: auto;
+    }
+
+    @include moreThan(md) {
+        display: none;
+    }
+}
+
 .image {
     position: relative;
     display: flex;
-    flex-grow: 1;
-    flex-shrink: 0;
     align-items: flex-end;
     height: 1.4em;
+
+    & > svg {
+        width: 100%;
+        height: auto;
+    }
 
     img {
         width: 100%;
         height: 100%;
         object-fit: contain;
+    }
+
+    
+    @include lessThan(md) {
+        display: none !important;
     }
 }
 
@@ -71,6 +127,18 @@
 
     .image{
         justify-content: flex-end;
+
+        
+    }
+}
+
+.secondBlock{
+    @include lessThan(md) {
+        align-items: center;
+
+        .imageMobile {
+            flex-grow: 0.5;
+        }
     }
 }
 
@@ -78,6 +146,14 @@
     .image {
         display: flex;
         justify-content: flex-end;
+    }
+
+    @include lessThan(md) {
+        align-items: center;
+
+        .imageMobile {
+            flex-grow: 0.8;
+        }
     }
 }
 
@@ -88,22 +164,38 @@
     position: absolute;
     left: 90px;
     top: 26px;
+
+    @include lessThan(md) {
+        display: none;
+    }
 }
 
 .oct2{
     position: absolute;
     right: 58px;
     top: 38px;
+
+    @include lessThan(md) {
+        display: none;
+    }
 }
 
 .oct3{
     position: absolute;
     right: 41px;
     bottom: 20px;
+
+    @include lessThan(md) {
+        display: none;
+    }
 }
 
 .oct4{
     position: absolute;
     left: 58px;
     bottom: 73px;
+
+    @include lessThan(xl){
+        display: none;
+    }
 }

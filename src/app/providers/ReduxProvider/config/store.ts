@@ -1,10 +1,13 @@
 'use client';
 
+import { burgerMenuReducer } from '../slices/burgerMenu';
 import { configureStore } from '@reduxjs/toolkit';
 
 export const makeStore = () => {
   return configureStore({
-    reducer: {}
+    reducer: {
+      burgerMenu: burgerMenuReducer
+    }
   });
 };
 

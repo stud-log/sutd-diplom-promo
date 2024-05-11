@@ -10,7 +10,47 @@
         display: block;
         margin-top: 35px;
         border-bottom: 1px solid var(--white);
+
+        @include lessThan(md) {
+            display: none;
+        }
     }
+
+    @include lessThan(sm) {
+        padding: 20px;
+    }
+}
+
+.mobileBlock{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include moreThan(md) {
+        display: none;
+    }
+
+    @include lessThan(md) {
+        .logo {
+            width: 70px;
+            height: 70px;
+
+            svg {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    @include lessThan(sm) {
+        .logo {
+            width: 35px;
+            height: 35px;
+        }
+
+    }
+
+
 }
 
 .desktopMenu {
@@ -24,17 +64,107 @@
         cursor: pointer;
     }
 
-    @include lessThan(lg) {
+    @include lessThan(md) {
         display: none;
     }
 }
 
-.mobileMenu{
-    .linkItem{
-        cursor: pointer;
+
+
+.burger {
+    position: relative;
+    border-radius: 4px;
+    width: 60px;
+    height: 60px;
+    transition: all 250ms ease-out;
+    cursor: pointer;
+
+
+    &:focus-visible {
+        outline: none !important;
     }
 
-    @include moreThan(lg) {
-        display: none;
+    @include lessThan(sm) {
+        width: 35px;
+        height: 35px;
+    }
+    
+}
+
+
+
+.line {
+    position: absolute;
+    left: 0;
+    border-radius: 100px;
+    width: 100%;
+    height: 6px;
+    background: var(--white);
+    transition: 0.5s;
+
+    @include lessThan(sm) {
+        height: 3px;
+    } 
+}
+
+.line:nth-child(1) { 
+    top: 12px;
+
+    @include lessThan(sm) {
+        top: 5px;
+    } 
+}
+
+.line:nth-child(2) {
+    top: 29px; 
+
+    @include lessThan(sm) {
+        top: 15px;
+    } 
+}
+
+.line:nth-child(3) { 
+    top: 46px; 
+
+    @include lessThan(sm) {
+        top: 25px;
+    } 
+}
+
+.open .line:nth-child(1){
+    transform: translateY(12px) rotate(-45deg);
+
+    @include lessThan(sm) {
+        transform: translateY(5px) rotate(-45deg);
+        
+    } 
+}
+
+.open .line:nth-child(2){
+    opacity:0;
+}
+ 
+.open .line:nth-child(3){
+    transform: translateY(-22px) rotate(45deg);
+
+    @include lessThan(sm) {
+        transform: translateY(-15px) rotate(45deg); 
+    } 
+}
+
+.open.burger {
+    position: fixed;
+    right: 50px;
+    z-index: 1000; 
+
+    
+
+    .line {
+        background: var(--black-main);
+    }
+
+    @include lessThan(sm) {
+        right: 20px;
     }
 }
+  

@@ -47,6 +47,13 @@ export const AboutUs: FC<AboutUsProps> = ({ className }) => {
         </div>
       </div>
 
+      <div className={cls.mobileBlock}>
+        <div className={cls.studi}><StudiImage /></div>
+        <div className={cls.btn}>
+          <a href="https://studlog.ru/reg" target='_blank'>Зарегистрироваться</a>
+        </div>
+      </div>
+
       <div className={cls.advents}>
         <div className={cls.header}>ПРЕИМУЩЕСТВА</div>
         <div className={cls.wrapper}>

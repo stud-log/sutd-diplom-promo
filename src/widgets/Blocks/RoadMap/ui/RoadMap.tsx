@@ -1,5 +1,6 @@
 import { FC } from 'react';
 import LineIcon from '@/shared/assets/img/Group 41293.svg';
+import LineMobileIcon from '@/shared/assets/img/Group 41299.svg';
 import Polygon2Icon from '@/shared/assets/img/Polygon 5.svg';
 import PolygonIcon from '@/shared/assets/img/Polygon 6.svg';
 import Star2Icon from '@/shared/assets/img/Star 4.svg';
@@ -16,6 +17,8 @@ export const RoadMap: FC<RoadMapProps> = ({ className }) => {
   return (
     <div className={classNames(cls.RoadMap, {}, [ className ])} id='purposes'>
       <LineIcon className={cls.line} />
+      <LineMobileIcon className={cls.mobileLine} />
+
       <div className={cls.header}>НАШИ ЦЕЛИ</div>
       <div className={cls.cardsWrapper}>
         <div className={classNames(cls.justifyEnd, {}, [ cls.row ])}>
