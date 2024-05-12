@@ -18,6 +18,7 @@ export const MobileMenu: FC<MobileMenuProps> = ({ className }) => {
   const dispatch = useAppDispatch();
   const scrollTo = (e: any, element: string) => {
     e.preventDefault();
+    document.body.classList.remove('stop-scroll');
     dispatch(burgerMenuActions.closeModal());
     setTimeout(() => {
       handleClickScroll(e, element);

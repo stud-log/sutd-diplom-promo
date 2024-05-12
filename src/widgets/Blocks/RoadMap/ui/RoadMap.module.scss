@@ -116,6 +116,11 @@
         height: calc(207px / 1.35);
         font-size: 14px;
     }
+
+    @include lessThan(xs) {
+        width: 285px;
+        height: 140px;
+    } 
 }
 
 .line{
@@ -143,7 +148,13 @@
     left: 15px;
     height: 100%;
 
+    @include lessThan(xs) {
+        left: 5px;
+    }
+
     @include moreThan(sm) {
         display: none;
     } 
+
+    
 }

@@ -26,7 +26,16 @@ export const HeaderMenu: FC<HeaderMenuProps> = ({ className }) => {
     <div className={classNames(cls.HeaderMenu, {}, [ className ])}>
       <div className={cls.mobileBlock}>
         <div className={cls.logo}><LogoBlack /> </div>
-        <button className={classNames(cls.burger, { [cls.open]: burger.isOpen }, [ className ])} onClick={() => dispatch(burgerMenuActions.toggleModal(!burger.isOpen))}>
+        <button className={classNames(cls.burger, { [cls.open]: burger.isOpen }, [ className ])} onClick={() => {
+          console.log(burger.isOpen);
+          dispatch(burgerMenuActions.toggleModal(!burger.isOpen));
+          
+          if(!burger.isOpen == true) {
+            document.body.classList.add('stop-scroll');
+          } else {
+            document.body.classList.remove('stop-scroll');
+          }
+        }}>
           <span className={cls.line}></span>
           <span className={cls.line}></span>
           <span className={cls.line}></span>

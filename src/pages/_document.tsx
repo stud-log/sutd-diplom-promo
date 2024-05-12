@@ -21,14 +21,6 @@ export default function Document() {
         <meta name="sitemap" content="/sitemap.xml" />
       </Head>
       <body>
-        <noscript>
-          <div
-            dangerouslySetInnerHTML={{
-              __html: `<img src="https://mc.yandex.ru/watch/92765014" style="position:absolute; left:-9999px;" alt="" />`,
-            }}
-          ></div>
-        </noscript>
-
         <Main />
         <NextScript />
       </body>
